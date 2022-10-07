@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="icon" type="image/x-icon" href="/assets/css/contact-list.jpg">
+     <script  src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="/css/my.css">
+</head>
+<body>
+    <div id="my-head"><span><i class="fa-regular fa-address-book fa-3x"></i></span><span id="my-heading">Students Record</span></div>
+   <div>
+    <ul>
+       <%for(let i of contact_list){ %>
+    <li id="my-list">
+        <div class="my-items">
+        <span><%=i.name%></span>
+        <span class="my-branch"><%=i.branch%></span>
+        <span class="my-rollnumber"><%=i.rollnumber%></span>
+        <span class="my-phone"><%=i.phone%></span>
+       <span><a href="/delete-contact/?id=<%=i._id%>" class="my-delete" id="my-trash">
+        <i class="fa-sharp fa-solid fa-trash"></i></a></span></div>
+    </li> 
+   <%}%>
+    </ul>
+      </div>
+      <div>
+    <form action="/createcontact" method="POST">
+     <input  class="my-input" type="text" name="name" placeholder="Enter Name" required>
+     <input class="my-input" type="text" name="branch" placeholder="Enter branch" required>
+     <input class="my-input" type="number" name="rollnumber" placeholder="Enter rollnumber" required>
+     <input class="my-input" type="number" name="phone" placeholder="Enter Phone" required>
+    <button type="submit" id="my-btn">Add to Records</button>
+    </form>
+        </div>
+    <script type="text/javascript" src="/js/my.js"></script>
+</body>
+</html>

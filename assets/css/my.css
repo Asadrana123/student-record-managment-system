@@ -1,0 +1,69 @@
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-image: url("https://miro.medium.com/max/696/0*gjTlTxZl1dcjxIsd.jpg");
+}
+ul{
+    list-style: none;
+}
+#my-head{
+    color: #242221;
+}
+ul{
+  list-style-type: none;  
+}
+#my-heading{
+    font-size: 40px;
+    margin-left: 10px;
+}
+.my-items{
+    background-color:rgb(102, 102, 172);
+    border: 3px solid silver;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.my-items:hover{
+   background-color: gray;
+}
+.my-input{
+    font-size: 25px;
+}
+#my-btn{
+    position: relative;
+    top:10px;
+    left: 560px;
+    font-size: 30px;
+    background-color: rgb(77, 74, 74);
+    color: white;
+}
+.my-phone{
+    position: absolute;
+    left: 1000px;
+}
+.my-rollnumber{
+    position: absolute;
+    left: 700px;
+}
+.my-branch{
+    position: absolute;
+    left: 500px;
+}
+.my-delete{
+    position: absolute;
+    left: 1170px;
+    color: silver;
+}
+#my-trash{
+    margin-left: 5px;
+}
+#my-list{
+   width: 1000px;
+}
